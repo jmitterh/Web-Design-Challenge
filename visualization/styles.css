@@ -1,7 +1,3 @@
-
-
-
-
 .dropdown-toggle::after {
     display: inline-block;
     margin-left: .255em;
@@ -30,4 +26,10 @@
     .bd-placeholder-img-lg {
       font-size: 3.5rem;
     }
+  }
+
+  .panel {
+  height: 150px;
+  width: 100%;
+  display: block;
   }
