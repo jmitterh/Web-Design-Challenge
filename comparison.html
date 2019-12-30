@@ -7,214 +7,126 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.5">
-    <title>Latitude Comparison</title>
+    <title>Comparison</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/">
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <!-- styles sheet -->
     <link rel="stylesheet" type="text/css" href="./visualization/styles.css">
 
-    <!-- Custom styles for this template -->
-    <link href="starter-template.css" rel="stylesheet">
-
 </head>
 
 <body>
-    <main role="main" class="container">
-        <div class='row'>
-            <div class="col-md-12">
-                <!-- Navbar -->
-                <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-                    <a class="navbar-brand" href="index.html">Lattitude</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+<main role="main" class="container">
+    <div class='row'>
+        <div class="col-md-12">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+                <a class="navbar-brand" href="index.html">Lattitude</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false"
                         aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="comparison.html">Comparison</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="dataset.html">Data</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false">Plots</a>
-                                <span class="caret"></span>
-                                <div class="dropdown-menu" aria-labelledby="dropdown01">
-                                    <a class="dropdown-item" href="./visualization/temp.html">Max Temperature</a>
-                                    <a class="dropdown-item" href="./visualization/humidity.html">Humidity</a>
-                                    <a class="dropdown-item" href="./visualization/cloudiness.html">Cloudiness</a>
-                                    <a class="dropdown-item" href="./visualization/wind_speed.html">Wind Speed</a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-        </div>
-        <!-- End of Nav -->
-        <div id="top_body" class='row'>
-            <div class="col-lg-7 col-md-12">
-                <!-- large container -->
-                <div class="jumbotron">
-                    <div class='row'>
-                        <div class='col-lg-6 col-md-6'>
-                            <h5 class="display-5">Temperature</h5>
-                            <hr class="my-4">
-                            <p>
-                                <img class='picture' src="./Resources/city_lat_vs_wind_speed.png">
-                                This analysis was completed by pulling data from the OpenWeatherMap API, to create a
-                                dataset
-                                with
-                                over <a href="dataset.html">500 cites.</a> After creating the dataset,
-                                a module from python known as Matplotib was used to visually represent the dataset.
-                                There
-                                are
-                                four
-                                visualizations
-                                created: Max Temperature, Humidity, Cloudiness, and Wind speed.
-                            </p>
-                        </div>
-                        <div class='col-lg-6 col-md-6'>
-                            <h5 class="display-5">Humidity</h5>
-                            <hr class="my-4">
-                            <p>
-                                <img class='picture' src="./Resources/city_lat_vs_humidity.png">
-                                This analysis was completed by pulling data from the OpenWeatherMap API, to create a
-                                dataset
-                                with
-                                over <a href="dataset.html">500 cites.</a> After creating the dataset,
-                                a module from python known as Matplotib was used to visually represent the dataset.
-                                There
-                                are
-                                four
-                                visualizations
-                                created: Max Temperature, Humidity, Cloudiness, and Wind speed.
-                            </p>
-                        </div>
-                    </div>
-                    <div class='row'>
-                        <div class='col-lg-6 col-md-6'>
-                            <h5 class="display-5">Cloudiness</h5>
-                            <hr class="my-4">
-                            <p>
-                                <img class='picture' src="./Resources/city_lat_vs_cloudiness.png">
-                                This analysis was completed by pulling data from the OpenWeatherMap API, to create a
-                                dataset
-                                with
-                                over <a href="dataset.html">500 cites.</a> After creating the dataset,
-                                a module from python known as Matplotib was used to visually represent the dataset.
-                                There
-                                are
-                                four
-                                visualizations
-                                created: Max Temperature, Humidity, Cloudiness, and Wind speed.
-                            </p>
-                        </div>
-                        <div class='col-lg-6 col-md-6'>
-                            <h5 class="display-5">Wind Speed</h5>
-                            <hr class="my-4">
-                            <p>
-                                <img class='picture' src="./Resources/city_lat_vs_wind_speed.png">
-                                This analysis was completed by pulling data from the OpenWeatherMap API, to create a
-                                dataset
-                                with
-                                over <a href="dataset.html">500 cites.</a> After creating the dataset,
-                                a module from python known as Matplotib was used to visually represent the dataset.
-                                There
-                                are
-                                four
-                                visualizations
-                                created: Max Temperature, Humidity, Cloudiness, and Wind speed.
-                            </p>
-                        </div>
-                    </div>
+                <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="comparison.html">Comparison</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dataset.html">Data</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
+                               aria-haspopup="true" aria-expanded="false">Plots</a>
+                            <span class="caret"></span>
+                            <div class="dropdown-menu" aria-labelledby="dropdown01">
+                                <a class="dropdown-item" href="./visualization/temp.html">Max Temperature</a>
+                                <a class="dropdown-item" href="./visualization/humidity.html">Humidity</a>
+                                <a class="dropdown-item" href="./visualization/cloudiness.html">Cloudiness</a>
+                                <a class="dropdown-item" href="./visualization/wind_speed.html">Wind Speed</a>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-            <div class="col-lg-5 col-md-12">
-                <h4 class="display-5">Visualization</h4>
-                <hr class="my-4">
+            </nav>
+        </div>
+    </div>
+    <!-- End of Nav -->
+    <div id="top_body" class='row'>
+        <div class="col-lg-12 col-md-12">
+            <p id="paragraph_p">
+                Click any plot to get an in-depth analysis.
+            </p>
+            <!-- large container -->
+            <div class="jumbotron">
                 <div class='row'>
                     <div class='col-lg-6 col-md-6'>
                         <a href="./visualization/temp.html">
-                            <div class="card text-white bg-primary mb-3">
-                                <div class="card-header">Temperature</div>
-                                <div class="card-body">
-                                    <img class="panel" src="./Resources/city_lat_vs_max_temp.png" alt="Max Temperature">
-                                </div>
-                            </div>
+                            <h5 class="display-5">Temperature</h5>
+                            <hr class="my-4">
+                            <img class='picture' src="./Resources/city_lat_vs_max_temp.png">
                         </a>
                     </div>
                     <div class='col-lg-6 col-md-6'>
                         <a href="./visualization/humidity.html">
-                            <div class="card text-white bg-primary mb-3">
-                                <div class="card-header">Humidity</div>
-                                <div class="card-body">
-                                    <img class="panel" src="./Resources/city_lat_vs_humidity.png" alt="Humidity">
-                                </div>
-                            </div>
+                            <h5 class="display-5">Humidity</h5>
+                            <hr class="my-4">
+                            <img class='picture' src="./Resources/city_lat_vs_humidity.png">
                         </a>
                     </div>
                 </div>
+                <br>
                 <div class='row'>
                     <div class='col-lg-6 col-md-6'>
                         <a href="./visualization/cloudiness.html">
-                            <div class="card text-white bg-primary mb-3">
-                                <div class="card-header">Cloudiness</div>
-                                <div class="card-body">
-                                    <img class="panel" src="./Resources/city_lat_vs_cloudiness.png" alt="Cloudiness">
-                                </div>
-                            </div>
+                            <h5 class="display-5">Cloudiness</h5>
+                            <hr class="my-4">
+                            <img class='picture' src="./Resources/city_lat_vs_cloudiness.png">
                         </a>
                     </div>
                     <div class='col-lg-6 col-md-6'>
                         <a href="./visualization/wind_speed.html">
-                            <div class="card text-white bg-primary mb-3">
-                                <div class="card-header">Wind Speed</div>
-                                <div class="card-body">
-                                    <img class="panel" src="./Resources/city_lat_vs_wind_speed.png" alt="Wind Speed">
-                                </div>
-                            </div>
+                            <h5 class="display-5">Wind Speed</h5>
+                            <hr class="my-4">
+                            <img class='picture' src="./Resources/city_lat_vs_wind_speed.png">
                         </a>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Footer -->
-        <footer class="page-footer font-small blue">
+    <!-- Footer -->
+    <footer class="page-footer font-small blue">
 
-            <!-- Copyright -->
-            <div class="footer-copyright text-center py-3">
-                © 2019 Jean-Paul M. Copyright
-            </div>
-            <!-- Copyright -->
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+            © 2019 Jean-Paul M. Copyright
+        </div>
+        <!-- Copyright -->
 
-        </footer>
-        <!-- Footer -->
+    </footer>
+    <!-- Footer -->
 
 
-    </main><!-- /.container -->
+</main><!-- /.container -->
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
 

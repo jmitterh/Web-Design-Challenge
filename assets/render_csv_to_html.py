@@ -1,3 +1,12 @@
+import pandas as pd
+#import webbrowser
+
+df = pd.read_csv("../Resources/cities.csv")
+print(df.head())
+
+data_html = open('../dataset.html','w')
+
+message = f"""
 <!doctype html>
 <html lang="en">
 
@@ -7,7 +16,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.5">
-    <title>Latitude Home</title>
+    <title>Data</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/">
 
@@ -62,82 +71,14 @@
     </div>
     <!-- End of Nav -->
     <div id="top_body" class='row'>
-        <div class="col-lg-7 col-md-12">
+        <div class="col-lg-12 col-md-12">
             <!-- large container -->
-            <div class="jumbotron">
-                <h1 class="display-4">Latitude Comparison</h1>
-                <p class="lead">
-                    The purpose of this website is to show the analysis of weather changes as coordinates get closer
-                    to
-                    the
-                    equator.
+                <p id="paragraph_p">
+                    The following table includes all of the data used for plotting during this project.
                 </p>
-                <hr class="my-4">
-                <p>
-                    This analysis was completed by pulling data from the OpenWeatherMap API, to create a dataset
-                    with
-                    over <a href="dataset.html">500 cites.</a> After creating the dataset,
-                    a module from python known as Matplotib was used to visually represent the dataset. There are
-                    four
-                    visualizations
-                    created: Max Temperature, Humidity, Cloudiness, and Wind speed.
-                </p>
-                <p class="lead">
-                    <a class="btn btn-primary btn-lg" href="./visualization/temp.html"
-                       role="button">Visualizations</a>
-                </p>
-            </div>
-        </div>
-        <div class="col-lg-5 col-md-12">
-            <h4 class="display-5">Visualization</h4>
-            <hr class="my-4">
-            <div class='row'>
-                <div class='col-lg-6 col-md-6'>
-                    <a href="./visualization/temp.html">
-                        <div class="card text-white bg-primary mb-3">
-                            <div class="card-header">Temperature</div>
-                            <div class="card-body">
-                                <img class="panel" src="./Resources/city_lat_vs_max_temp.png" alt="Max Temperature">
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class='col-lg-6 col-md-6'>
-                    <a href="./visualization/humidity.html">
-                        <div class="card text-white bg-primary mb-3">
-                            <div class="card-header">Humidity</div>
-                            <div class="card-body">
-                                <img class="panel" src="./Resources/city_lat_vs_humidity.png" alt="Humidity">
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class='row'>
-                <div class='col-lg-6 col-md-6'>
-                    <a href="./visualization/cloudiness.html">
-                        <div class="card text-white bg-primary mb-3">
-                            <div class="card-header">Cloudiness</div>
-                            <div class="card-body">
-                                <img class="panel" src="./Resources/city_lat_vs_cloudiness.png" alt="Cloudiness">
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class='col-lg-6 col-md-6'>
-                    <a href="./visualization/wind_speed.html">
-                        <div class="card text-white bg-primary mb-3">
-                            <div class="card-header">Wind Speed</div>
-                            <div class="card-body">
-                                <img class="panel" src="./Resources/city_lat_vs_wind_speed.png" alt="Wind Speed">
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
+                {df.to_html(index=False)}
         </div>
     </div>
-
 
     <!-- Footer -->
     <footer class="page-footer font-small blue">
@@ -167,3 +108,7 @@
 </body>
 
 </html>
+
+"""
+data_html.write(message)
+data_html.close()
