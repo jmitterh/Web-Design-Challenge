@@ -17,7 +17,7 @@
 
 
     <!-- styles sheet -->
-    <link rel="stylesheet" type="text/css" href="./visualization/styles.css">
+    <link rel="stylesheet" type="text/css" href="../visualization/styles.css">
 
     <!-- Custom styles for this template -->
     <link href="starter-template.css" rel="stylesheet">
@@ -30,7 +30,7 @@
             <div class="col-md-12">
                 <!-- Navbar -->
                 <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-                    <a class="navbar-brand" href="index.html">Lattitude</a>
+                    <a class="navbar-brand" href="../index.html">Lattitude</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -40,23 +40,23 @@
                     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="comparison.html">Comparison</a>
+                                <a class="nav-link" href="../comparison.html">Comparison</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="dataset.html">Data</a>
+                                <a class="nav-link" href="../dataset.html">Data</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
                                     aria-haspopup="true" aria-expanded="false">Plots</a>
                                 <span class="caret"></span>
                                 <div class="dropdown-menu" aria-labelledby="dropdown01">
-                                    <a class="dropdown-item" href="./visualization/temp.html">Max Temperature</a>
-                                    <a class="dropdown-item" href="./visualization/humidity.html">Humidity</a>
-                                    <a class="dropdown-item" href="./visualization/cloudiness.html">Cloudiness</a>
-                                    <a class="dropdown-item" href="./visualization/wind_speed.html">Wind Speed</a>
+                                    <a class="dropdown-item" href="temp.html">Max Temperature</a>
+                                    <a class="dropdown-item" href="humidity.html">Humidity</a>
+                                    <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                                    <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
                                 </div>
                             </li>
                         </ul>
@@ -66,17 +66,12 @@
         </div>
         <!-- End of Nav -->
         <div id="top_body" class='row'>
-            <div class="col-lg-7 col-md-12">
+            <div class="col-lg-7 col-md-12 col-xs-12">
                 <!-- large container -->
                 <div class="jumbotron">
-                    <h1 class="display-4">Latitude Comparison</h1>
-                    <p class="lead">
-                        The purpose of this website is to show the analysis of weather changes as coordinates get closer
-                        to
-                        the
-                        equator.
-                    </p>
+                    <h1 class="display-5">Cloudiness</h1>
                     <hr class="my-4">
+                    <img class='picture' src="../Resources/city_lat_vs_cloudiness.png">
                     <p>
                         This analysis was completed by pulling data from the OpenWeatherMap API, to create a dataset
                         with
@@ -86,10 +81,6 @@
                         visualizations
                         created: Max Temperature, Humidity, Cloudiness, and Wind speed.
                     </p>
-                    <p class="lead">
-                        <a class="btn btn-primary btn-lg" href="./visualization/temp.html"
-                            role="button">Visualizations</a>
-                    </p>
                 </div>
             </div>
             <div class="col-lg-5 col-md-12">
@@ -97,21 +88,21 @@
                 <hr class="my-4">
                 <div class='row'>
                     <div class='col-lg-6 col-md-6'>
-                        <a href="./visualization/temp.html">
+                        <a href="temp.html">
                             <div class="card text-white bg-primary mb-3">
                                 <div class="card-header">Temperature</div>
                                 <div class="card-body">
-                                    <img class="panel" src="./Resources/city_lat_vs_max_temp.png" alt="Max Temperature">
+                                    <img class="panel" src="../Resources/city_lat_vs_max_temp.png" alt="Max Temperature">
                                 </div>
                             </div>
                         </a>
                     </div>
                     <div class='col-lg-6 col-md-6'>
-                        <a href="./visualization/humidity.html">
+                        <a href="humidity.html">
                             <div class="card text-white bg-primary mb-3">
                                 <div class="card-header">Humidity</div>
                                 <div class="card-body">
-                                    <img class="panel" src="./Resources/city_lat_vs_humidity.png" alt="Humidity">
+                                    <img class="panel" src="../Resources/city_lat_vs_humidity.png" alt="Humidity">
                                 </div>
                             </div>
                         </a>
@@ -119,21 +110,21 @@
                 </div>
                 <div class='row'>
                     <div class='col-lg-6 col-md-6'>
-                        <a href="./visualization/cloudiness.html">
+                        <a href="cloudiness.html">
                             <div class="card text-white bg-primary mb-3">
                                 <div class="card-header">Cloudiness</div>
                                 <div class="card-body">
-                                    <img class="panel" src="./Resources/city_lat_vs_cloudiness.png" alt="Cloudiness">
+                                    <img class="panel" src="../Resources/city_lat_vs_cloudiness.png" alt="Cloudiness">
                                 </div>
                             </div>
                         </a>
                     </div>
                     <div class='col-lg-6 col-md-6'>
-                        <a href="./visualization/wind_speed.html">
+                        <a href="wind_speed.html">
                             <div class="card text-white bg-primary mb-3">
                                 <div class="card-header">Wind Speed</div>
                                 <div class="card-body">
-                                    <img class="panel" src="./Resources/city_lat_vs_wind_speed.png" alt="Wind Speed">
+                                    <img class="panel" src="../Resources/city_lat_vs_wind_speed.png" alt="Wind Speed">
                                 </div>
                             </div>
                         </a>

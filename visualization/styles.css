@@ -29,7 +29,21 @@
   }
 
   .panel {
-  height: 150px;
+  height: 100%;
   width: 100%;
   display: block;
+  }
+
+  #top_body {
+      padding-top: 8%;
+  }
+
+  .mb-3 {
+    max-width: 20rem;
+  }
+
+  .picture {
+    height: 100%;
+    width: 100%;
+    align-items: center;
   }
